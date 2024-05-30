@@ -55,7 +55,7 @@
 						on:change={() => getBase64(files[0])}
 					/>
 					<button class="upload-btn" on:click={() => fileInput.click()}>
-						{#if data.img}
+						{#if newData.img}
 							<img src={newData.img} alt={'img'} class="w-10 h-10" />
 						{:else}
 							<Image />
