@@ -1,17 +1,30 @@
 <script>
-	import Activity from '../components/activity.svelte';
-	const activities = [
-		{
-			user: 'John Doe',
-			date: '2021-01-01',
-			activity: 'Logged in'
-		}
-	];
+	import { activities } from '../store';
+	import Activity from '../components/list/activity.svelte';
+	import ActivityModal from '../components/modal/activityModal.svelte';
+
+	let activitiesData = [];
+	let openData = {};
+
+	let openModal = false;
+	const turnActivityModal = (data) => {
+		openModal = !openModal;
+		openData = data;
+	};
+	activities.subscribe((value) => {
+		activitiesData = value;
+	});
 </script>
 
 <h1>Activity</h1>
-<ul>
-	{#each activities as activity}
-		<Activity user={activity.user} date={activity.date} activity={activity.activity} />
-	{/each}
-</ul>
+{#key activitiesData}
+	<div class="flex flex-col gap-2">
+		{#each activitiesData as data}
+			<Activity {data} {turnActivityModal} />
+		{/each}
+	</div>
+{/key}
+
+{#if openModal}
+	<ActivityModal data={openData} turnModal={turnActivityModal} />
+{/if}

@@ -2,4 +2,4 @@
 	import List from '../../components/list/list.svelte';
 </script>
 
-<List group={'hobbies'} />
+<List group={'books'} />
