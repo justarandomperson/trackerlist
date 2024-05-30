@@ -1,5 +1,5 @@
 <script>
-	import Edit from '../icons/Edit.svelte';
+	import Edit from '../icons/edit.svelte';
 	import { hobbies } from '../../store';
 	import { tick } from '$lib/hobbyUtil';
 	import { convertToShortDate } from '$lib/util';
