@@ -17,7 +17,7 @@
 		transition:scale={{ duration: 300 }}
 	>
 		<div
-			class="flex flex-col justify-between w-1/2 h-1/5 mt-20 bg-slate-800 p-2 shadow-2xl shadow-black rounded-md"
+			class="flex flex-col w-4/5 h-2/6 mt-20 bg-slate-800 p-2 shadow-2xl shadow-black rounded-md sm:w-1/2"
 		>
 			<div>
 				<div class="flex justify-between">

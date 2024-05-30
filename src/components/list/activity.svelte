@@ -15,7 +15,7 @@
 </script>
 
 <li
-	class="group flex bg-slate-800 w-3/4 h-20 pt-1 rounded-md transition-colors hover:bg-slate-700 md:w-1/4"
+	class="group flex bg-slate-800 w-full h-20 pt-1 rounded-md transition-colors hover:bg-slate-700 md:w-1/4"
 	on:mouseleave={leaveNote}
 >
 	<button
@@ -25,7 +25,7 @@
 		<div class="flex justify-between w-full">
 			<div class="flex gap-5">
 				<h2 class="text-sky-400 font-semibold">{data.user || 'you'}</h2>
-				<h1 class="flex-grow">{data.activity}</h1>
+				<h1 class="flex-grow text-sm sm:text-base">{data.activity}</h1>
 			</div>
 			<h2>{data.date}</h2>
 		</div>
