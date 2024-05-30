@@ -1,1 +1,1 @@
-basically anilist but nerdy
+basically anilist but nerdy (even more)
