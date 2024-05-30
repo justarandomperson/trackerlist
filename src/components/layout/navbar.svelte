@@ -1,5 +1,5 @@
 <div class="flex justify-around p-2 bg-slate-800">
-	<h1 class="text-md font-bold md:text-2xl">HobbyList</h1>
+	<h1 class="text-md font-bold md:text-2xl">TrackerList</h1>
 	<nav>
 		<ul class="flex gap-2 p-1 text-slate-300 *:text-xs md:*:text-base md:gap-5">
 			<li><a href="/" class="hover:text-slate-100">Home</a></li>

@@ -15,7 +15,7 @@
 
 {#each data as entry}
 	{#if entry.status === 'Doing' || 'Reading' || 'Watching'}
-		<div class="bg-slate-800 w-96 h-16 p-1 rounded-md">
+		<div class="bg-slate-800 w-[32rem] h-16 p-1 rounded-md">
 			<div class="flex justify-between">
 				<h1 class="font-semibold">{entry.name}</h1>
 				<h2>Started on: {entry.startDate}</h2>
