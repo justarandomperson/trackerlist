@@ -62,7 +62,7 @@
 						{/if}
 					</button>
 					<input
-						class=" text-2xl w-1/2 px-2 py-1 mt-1 rounded-md text-white mb-4 bg-transparent outline-none hover:bg-slate-900 focus:bg-slate-900"
+						class=" text-base w-full px-2 py-1 mt-1 rounded-md text-white mb-4 bg-transparent outline-none hover:bg-slate-900 focus:bg-slate-900 sm:text-2xl sm:w-2/3"
 						bind:value={newData.name}
 					/>
 				</div>
