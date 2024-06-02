@@ -41,7 +41,7 @@
 		transition:scale={{ duration: 300 }}
 	>
 		<div
-			class="flex flex-col justify-between w-full max-h-[30rem] mt-10 bg-slate-800 p-2 shadow-2xl shadow-black rounded-md sm:max-h-[35rem] sm:w-1/2 sm:mt-36"
+			class="flex flex-col justify-between w-full max-h-[30rem] mt-5 bg-slate-800 p-2 shadow-2xl shadow-black rounded-md sm:max-h-[35rem] sm:w-1/2 sm:mt-20"
 		>
 			<div>
 				<div class="flex">
@@ -152,7 +152,7 @@
 			</div>
 		</div>
 		<div
-			class="w-full bottom-0 bg-slate-800 shadow-2xl shadow-black rounded-md sm:w-1/5 sm:absolute sm:right-10 sm:my-36 sm:bottom-auto"
+			class="w-full bottom-0 bg-slate-800 shadow-2xl shadow-black rounded-md sm:w-1/5 sm:absolute sm:right-10 sm:my-20 sm:bottom-auto"
 		>
 			{#if !hasLength}
 				<TickMap lastMapCheck={data.lastMapCheck} name={data.name} map={data.map} />
